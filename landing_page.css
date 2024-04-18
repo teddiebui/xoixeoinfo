@@ -433,6 +433,11 @@ main .header-1 {
     margin: auto;
 }
 
+button,
+.button {
+    cursor: progress
+}
+
 #middle button {
     position: absolute;
     width: 29vw;
@@ -621,7 +626,7 @@ nav .hover.hovered img:first-child {
 .video-container {
     border-radius: 0.7rem;
     width: 100%;
-    height: 637px;
+    height: 666px;
 }
 
 .video-container>* {
@@ -1132,7 +1137,6 @@ nav .hover.hovered img:last-child {
     #landing-page main article * {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
-        font-style: normal;
         font-size: 20px;
     }
 
