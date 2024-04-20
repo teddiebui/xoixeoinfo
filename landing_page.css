@@ -1193,12 +1193,17 @@ nav .hover.hovered img:last-child {
         margin: 1.2rem 0;
     }
 
+    #landing-page #tham-gia-ngay a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
     #landing-page #tham-gia-ngay {
         width:fit-content;
         margin-left: auto;
         margin-right: auto;
     }
-    #landing-page #tham-gia-ngay>button {
+    #landing-page #tham-gia-ngay button {
         border-radius: 3rem;
         width: 416px;
         height: 84px;
