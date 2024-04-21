@@ -1206,10 +1206,17 @@ nav .hover.hovered img:last-child {
     #landing-page #tham-gia-ngay button {
         border-radius: 3rem;
         width: 416px;
-        height: 84px;
-        background: url(img/Tham\ Gia\ Ngay\ 4.png)
+        height: 83px;
+        background: url(img/Tham\ Gia\ Ngay\ 4.png);
+        transition: 0.15s;
     }
-
+    
+    #landing-page #tham-gia-ngay button:hover {
+        background: url(img/hover/Tham\ Gia\ Ngay.png);
+        width: 437px;
+        height: 88px;
+        /* transition: 0.15s; */
+    }
     #landing-page main .controller .button:first-child {
         margin-right: 2rem;
     }
