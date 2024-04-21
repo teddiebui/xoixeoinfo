@@ -448,7 +448,7 @@ button,
     width: 29vw;
     height: 6.5vw;
     z-index: 5;
-    background-image: url(img/CUOC_NGAY.png);
+    background-image: url(img/CUOC_NGAY.webp);
     background-size: contain;
     background-repeat: no-repeat;
     bottom: 0;
@@ -492,7 +492,7 @@ button,
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 50%);
-    background-image: url("img/CHOI_NGAY.png");
+    background-image: url("img/CHOI_NGAY.webp");
     background-size: contain;
 }
 
@@ -509,7 +509,7 @@ button,
     position: absolute;
     transform: translate(82%, -146%);
 
-    background-image: url("img/THAM_GIA_NGAY.png");
+    background-image: url("img/THAM_GIA_NGAY.webp");
     background-size: contain;
 }
 
@@ -562,7 +562,7 @@ button,
     height: 5.4vw;
     position: absolute;
     transform: translate(18%, -105%);
-    background-image: url(img/THAM_GIA_NGAY.png);
+    background-image: url(img/THAM_GIA_NGAY.webp);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -651,21 +651,21 @@ nav .hover.hovered img:last-child {
 }
 
 #thut button#sgasd.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
+    background-image: url("img/hover/THAM_GIA_NGAY.webp");
 
 }
 
 #thut .row .button.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.png");
+    background-image: url("img/hover/THAM_GIA_NGAY.webp");
 }
 
 #middle button.hovered {
-    background-image: url("img/hover/CUOC_NGAY.png");
+    background-image: url("img/hover/CUOC_NGAY.webp");
 }
 
 
 #san-pham-da-dang .row .button.hovered {
-    background-image: url("img/hover/CHOI_NGAY.png");
+    background-image: url("img/hover/CHOI_NGAY.webp");
 
 }
 
@@ -808,7 +808,7 @@ nav .hover.hovered img:last-child {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
     body {
-        background: url(img/background.png);
+        background: url(img/background.webp);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -1207,12 +1207,12 @@ nav .hover.hovered img:last-child {
         border-radius: 3rem;
         width: 416px;
         height: 83px;
-        background: url(img/Tham\ Gia\ Ngay\ 4.png);
+        background: url(img/Tham\ Gia\ Ngay\ 4.webp);
         transition: 0.05s;
     }
     
     #landing-page #tham-gia-ngay button:hover {
-        background: url(img/hover/Tham\ Gia\ Ngay.png);
+        background: url(img/hover/Tham\ Gia\ Ngay.webp);
         width: 437px;
         height: 88px;
         /* transition: 0.15s; */
