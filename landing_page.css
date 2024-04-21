@@ -1208,7 +1208,7 @@ nav .hover.hovered img:last-child {
         width: 416px;
         height: 83px;
         background: url(img/Tham\ Gia\ Ngay\ 4.png);
-        transition: 0.15s;
+        transition: 0.05s;
     }
     
     #landing-page #tham-gia-ngay button:hover {
@@ -1234,7 +1234,7 @@ nav .hover.hovered img:last-child {
         text-align: center;
         font-size: 25px;
     }
-
+    #landing-page main .controller .button:hover,
     #landing-page main .controller .button.active {
         background-color: #FEAD00;
         border: 3px solid #FFFF65;
