@@ -36,15 +36,13 @@ header .cskh-logo {
 }
 
 
+#top-most>div>div {
+    justify-content: center !important;
+}
 
 .mobile .logo-container {
     background-color: #1F2124;
 }
-
-.video-container {
-    width: 100%;
-}
-
 
 
 .mobile .logo-container .img-container {
@@ -78,53 +76,6 @@ header .cskh-logo {
     display: block;
 }
 
-.my-modal {
-    display: none;
-}
-
-.my-modal .disable-background {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background: #000812;
-    opacity: 75%;
-}
-
-.my-modal {
-    position: fixed;
-    z-index: 55;
-    width: 100%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-}
-
-.modal-content {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    max-width: 996px;
-
-    text-align: center;
-}
-
-.modal-content video {
-    border: none;
-    border-radius: 0px;
-}
-
-.modal-content .cancel {
-    font-family: 'Inter', sans-serif;
-    font-size: 19px;
-    font-weight: 400;
-    color: #e2e2e2;
-    text-shadow: 0 0 5px #000;
-    /* font-style: italic; */
-}
 
 .mobile nav .title {
     margin-top: 0.2rem;
@@ -140,97 +91,6 @@ header .cskh-logo {
     overflow: hidden;
     position: relative;
 }
-
-.mobile .banner img,
-#khuyen-mai-banner {
-    position: relative;
-    z-index: -1;
-    display: block;
-    width: 100%;
-    height: 100%;
-
-    /* transform: translate(-25%, 0); */
-
-}
-
-.slideshow-container {
-    position: relative;
-}
-
-.slideshow-container .slideshow-controller {
-    position: absolute;
-    top: 30%;
-    left: 0%;
-    transform: translate(0%, 50%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 0.1rem;
-    width: 100%;
-}
-
-.slideshow-container .slideshow-controller>a {
-    color: white;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 3px 12px;
-    text-decoration: none;
-    text-shadow: 0px 0px 10px #0d0d0d;
-}
-
-.slideshow-container .slideshow-controller-dot {
-    position: absolute;
-    z-index: 0;
-    display: flex;
-    flex-direction: row;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
-
-
-.slideshow-container .slideshow-controller-dot .dot {
-    cursor: pointer;
-    height: 8px;
-    width: 8px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-
-    box-shadow: 0 0 3px #000;
-}
-
-.slideshow-container .slideshow-controller-dot .dot.active {
-    background-color: #717171;
-}
-
-.slide {
-    display: none !important;
-    opacity: 0%;
-    width: 100%;
-    position: relative;
-    z-index: -50
-}
-
-@keyframes appear {
-    from {
-        opacity: 0%
-    }
-
-    to {
-        opacity: 100%
-    }
-}
-
-.slide.current {
-    display: block !important;
-    opacity: 100%;
-    animation-name: appear;
-    animation-duration: 1s;
-}
-
 
 
 
@@ -262,12 +122,23 @@ header #top-controller a {
     text-decoration: none;
     display: block;
 }
+
 header #top-controller div:first-child button.controller {
     background-color: #FEAD00;
     border: 1px solid #FFFF65;
     margin-right: 0.5rem;
     color: #000;
 
+}
+
+#head-nav-left {
+    position: absolute;
+    top: 109%;
+    flex-direction: column;
+}
+
+#head-logo-container>a>img {
+    height: 13vw;
 }
 
 button.controller {
@@ -306,9 +177,6 @@ button.controller#login:hover {
 
 
 
-#head-nav-left {
-    flex-direction: column;
-}
 
 .img-container {
     width: 100%;
@@ -321,15 +189,7 @@ button.controller#login:hover {
     border: none;
     text-align: center;
     display: block;
-}
-
-#khuyen-mai-body,
-#san-pham-body {
-    background-position-y: 8%;
-}
-
-#san-pham-body {
-    background-position-y: 12%;
+    cursor: progress;
 }
 
 header nav a {
@@ -348,202 +208,54 @@ header nav a span {
     font-weight: 600;
 }
 
-.pc header nav .row:first-of-type {
+
+header nav .row:first-of-type {
+    background-color: inherit;
+}
+
+header nav {
     background-color: #1F2124;
 }
 
-#banner .img-container {
-    position: relative;
-    overflow-x: hidden !important;
+header nav a {
+    justify-content: center !important;
+}
+
+header nav a span {
+    font-family: "Inter", sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+}
+
+header nav a img {
+    width: 25px;
+}
+
+header .button {
+    font-size: 13px;
+    width: 125px;
+}
+
+main .header-1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Inter", sans-serif;
 }
 
 #banner img {
-    width: 200%;
-    position: relative;
-    transform: translate(-25%, 0);
-
+    background-size: 100%
 }
-
 
 
 main {
     color: white;
+    margin-top: 16vw;
 }
-main >div.container > div {
+
+main>div.container>div {
     margin-top: 1.8rem;
 }
 
-main .header-1 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 1rem;
-
-    background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-
-
-}
-
-#tinh-nang-noi-bat .img-container {
-    max-width: 45px;
-    margin-right: 0.5rem;
-}
-
-#tinh-nang-noi-bat img {
-    width: 100%;
-    display: block;
-
-}
-
-#tinh-nang-noi-bat .title {
-    font-size: 9px;
-    font-weight: bold;
-    margin-bottom: 0.3rem;
-    ;
-}
-
-#tinh-nang-noi-bat .caption {
-    color: #DEDEDE;
-    font-size: 7px;
-    font-weight: normal;
-}
-
-#tinh-nang-noi-bat .row {
-    padding: 0 !important;
-    margin: 0 !important;
-}
-
-#middle {
-    position: relative
-}
-
-#middle #zvvvs {
-    position: relative;
-}
-
-.position-relative {
-    position: relative
-}
-
-.display {
-    display: block;
-}
-
-#middle img#t5th {
-    transform: translate(-3%, 0%);
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-button,
-.button {
-    cursor: progress
-}
-
-#middle button {
-    position: absolute;
-    width: 29vw;
-    height: 6.5vw;
-    z-index: 5;
-    background-image: url(img/CUOC_NGAY.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 0;
-    right: 0;
-    transform: translate(-36%, -24%)
-}
-
-#middle>div:first-child {
-    margin-top: 0;
-}
-
-
-#middle #cup-c1 img {
-    max-height: 200px;
-    display: block;
-    margin: auto;
-}
-
-#middle>div {
-    margin-top: 1rem;
-}
-
-#san-pham-body #san-pham-da-dang {
-    margin-top: 3rem;
-}
-
-#san-pham-da-dang .item {
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-
-#san-pham-da-dang .item img {
-    display: block;
-    margin: auto;
-}
-
-#san-pham-da-dang .row .button {
-    width: 29vw;
-    height: 6.6vw;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background-image: url("img/CHOI_NGAY.webp");
-    background-size: contain;
-}
-
-
-
-#thut .row>div {
-    width: auto;
-    position: relative;
-}
-
-#thut .row .button {
-    width: 200px;
-    height: 40px;
-    position: absolute;
-    transform: translate(82%, -146%);
-
-    background-image: url("img/THAM_GIA_NGAY.webp");
-    background-size: contain;
-}
-
-#thut .ga {
-    width: 100%;
-}
-
-#thut .img-container {
-    position: relative;
-}
-
-
-#thut .abs.zz {
-    position: absolute;
-    top: 77%;
-    left: 7%;
-    transform: translate(0%, 0%);
-    height: 25px;
-}
-
-#khuyen-mai .promo-list>* {
-    margin-top: 3rem;
-}
-
-#khuyen-mai .promo-list img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-#thut #ggt img {
-    display: block;
-    width: 100%;
-}
 
 #disappear-sm {
     display: block;
@@ -557,72 +269,6 @@ button,
     display: none;
 }
 
-#thut button#sgasd {
-    width: 27vw;
-    height: 5.4vw;
-    position: absolute;
-    transform: translate(18%, -105%);
-    background-image: url(img/THAM_GIA_NGAY.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-
-
-#gerwb {
-    display: none;
-}
-
-
-#footer-logo .header-1 {
-    font-weight: 600;
-    font-size: 17px;
-}
-
-#kb .title {
-    color: white;
-    font-size: 1rem;
-    margin-bottom: 0.3rem;
-}
-
-#kb #gp {
-    flex-wrap: wrap;
-}
-
-#kb .row>div {
-    margin-top: 1.5rem;
-}
-
-#pttt a img {
-    height: 33px;
-}
-
-#td img,
-#tn img,
-#gp img {
-    margin-right: 0.8rem;
-
-}
-
-
-#copyright {
-    margin-top: 2rem;
-}
-
-
-
-#intro-title {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-#footer-intro,
-#pttt .title,
-#copyright {
-    color: #FFFFFF;
-    font-size: 14px;
-    text-align: justify;
-}
 
 nav .hover.hovered img:first-child {
     display: none;
@@ -631,7 +277,7 @@ nav .hover.hovered img:first-child {
 .video-container {
     border-radius: 0.7rem;
     width: 100%;
-    height: 666px;
+    height: 51.3vw;
 }
 
 .video-container>* {
@@ -650,29 +296,6 @@ nav .hover.hovered img:last-child {
 
 }
 
-#thut button#sgasd.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.webp");
-
-}
-
-#thut .row .button.hovered {
-    background-image: url("img/hover/THAM_GIA_NGAY.webp");
-}
-
-#middle button.hovered {
-    background-image: url("img/hover/CUOC_NGAY.webp");
-}
-
-
-#san-pham-da-dang .row .button.hovered {
-    background-image: url("img/hover/CHOI_NGAY.webp");
-
-}
-
-#ggt img:first-child {
-    width: 100%;
-}
-
 .text-gradient-inline {
     background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
     -webkit-background-clip: text;
@@ -682,6 +305,159 @@ nav .hover.hovered img:last-child {
     display: inline-block;
 
 }
+
+#landing-page h1,
+#landing-page h3 {
+    background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+#landing-page main a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFD76F;
+}
+
+#landing-page main article * {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 8px;
+}
+
+#landing-page main article h3 {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+#landing-page main article h1 {
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+#landing-page ul {
+    list-style-type: none;
+}
+
+#landing-page main #accordion {
+    max-width: 918px !important;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+#landing-page #footer-logo img {
+    margin: auto;
+    display: block;
+}
+
+
+
+#landing-page footer h3 {
+    color: #fff;
+    text-align: center;
+    margin: 1.2rem 0;
+
+    font-size: 15px;
+}
+
+#landing-page #tham-gia-ngay a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#landing-page #tham-gia-ngay {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#landing-page #tham-gia-ngay button {
+    border-radius: 3rem;
+    width: 49.5vw;
+    height: 9.8vw;
+    background: url(img/Tham\ Gia\ Ngay\ 4.webp);
+    background-size: cover;
+    transition: 0.05s;
+}
+
+#landing-page #tham-gia-ngay button:hover {
+    background: url(img/hover/Tham\ Gia\ Ngay.webp);
+    background-size: cover;
+    width: 54vw;
+    height: 11vw;
+    /* transition: 0.15s; */
+}
+
+#landing-page main .controller .button:first-child {
+    margin-right: 0.5rem;
+}
+
+#landing-page main .controller .button {
+    width: 34.3vw;
+    height: 6.8vw;
+    background-color: #303338;
+    border: 1px solid #7E889A;
+    border-radius: 3rem;
+
+
+    color: #FFF;
+    font-weight: 500;
+    text-align: center;
+    font-size: 14px;
+}
+
+#landing-page main .controller .button:hover,
+#landing-page main .controller .button.active {
+    background-color: #FEAD00;
+    border: 1px solid #FFFF65;
+    color: #000;
+}
+
+#footer-logo .header-1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#footer-logo > a > img {
+    height: 73px;
+}
+
+footer ul li a {
+    font-weight: 400;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul > *{
+    padding: 0;
+    margin: 0;
+}
+footer ul li, footer ul li a {
+    font-size: 15px;
+}
+
+#contacts {
+    list-style-type: disc;
+}
+
+#contacts > *, #contacts a{
+    font-size: 14px;
+}
+
+#contacts > * {
+    color: #FFD76F;
+
+}
+
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 400px) {
@@ -693,115 +469,13 @@ nav .hover.hovered img:last-child {
 
 @media (min-width: 576px) {
 
-
-
-    header nav .row:first-of-type {
-        background-color: inherit;
-    }
-
-    header nav {
-        background-color: #1F2124;
-    }
-
-    header nav a {
-        justify-content: center !important;
-    }
-
-    header nav a span {
-        font-family: "Inter", sans-serif;
-        font-size: 14px;
-        font-weight: 500;
-    }
-
-    header nav a img {
-        width: 25px;
-    }
-
-    header .button {
-        font-size: 13px;
-        width: 125px;
-    }
-
-    main .header-1 {
-        font-size: 40px;
-        font-weight: bold;
-        font-family: "Inter", sans-serif;
-    }
-
-
-    #banner img {
-        background-size: 100%
-    }
-
-    .display-sm {
-        display: block;
-    }
-
-    .display-sm-none {
-        display: none;
-    }
-
-    #sdsd {
-        display: none;
-    }
-
-
-
-    #gerwb {
-        display: block;
-    }
-
-    #tinh-nang-noi-bat>div {
-        border-right: 1px solid #FEAD00;
-    }
-
-    #intro-title {
-        display: none
-    }
-
-    #san-pham-da-dang .row .button {
-        width: 11rem;
-        height: 2.5rem;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%, 50%);
-    }
-
-    #middle {
-        position: static;
-    }
-
-    #middle .button {
-        width: 10.5rem;
-        height: 2.37rem;
-        top: 86%;
-        left: 55%;
-        right: 6%;
-        /* bottom: 100%; */
-        transform: translate(-50%, 0%);
+    .video-container {
+        height: 53vw;
     }
 
 
 
 
-    #footer-intro,
-    #pttt .title,
-    #copyright {
-        color: #FFFFFF;
-        font-size: 14px;
-        text-align: justify;
-    }
-
-    #copyright {
-        padding: 20px;
-    }
-
-    #divider {
-        padding: 25px 0;
-        border-bottom: 1px solid #757575;
-        margin: auto;
-    }
 }
 
 
@@ -813,22 +487,6 @@ nav .hover.hovered img:last-child {
         background-size: cover;
     }
 
-    #khuyen-mai .controllers {
-        display: none;
-    }
-
-    #khuyen-mai .promo-list>div {
-        display: block;
-    }
-
-    #footer-logo .header-1 {
-        font-size: 31px;
-        font-weight: 600;
-    }
-
-    #intro {
-        font-size: 14px;
-    }
 
     header #top-most .logo-text {
         color: white;
@@ -843,6 +501,32 @@ nav .hover.hovered img:last-child {
 
     }
 
+    #top-most>div>div {
+        justify-content: space-between !important;
+    }
+
+    #head-nav-left {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between !important;
+    }
+
+
+    #head-nav-left>div {
+        display: flex !important;
+    }
+
+    #head-logo-container>a>img {
+        height: 100%;
+    }
+
+
+    main {
+        margin-top: 0;
+    }
+
+
     #top-controller {
         padding: 0;
     }
@@ -854,21 +538,8 @@ nav .hover.hovered img:last-child {
         padding: 6px;
     }
 
-    #head-nav-left {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between !important;
-    }
 
-    #banner img {
-        width: 100%;
-        position: static;
-        transform: none;
-    }
 
-    #tinh-nang-noi-bat .img-container {
-        max-width: 100px;
-    }
 
     #banner {
         max-height: 350px;
@@ -876,34 +547,7 @@ nav .hover.hovered img:last-child {
 
     #head-logo-container {
         position: absolute;
-        top: 100%;
-    }
-
-    #thut .img-container {
-        position: relative;
-        width: fit-content;
-        margin: auto;
-    }
-
-    .ga {
-        display: block;
-        max-height: 547px;
-    }
-
-    #thut .abs {
-        display: block;
-        position: absolute;
-        top: 30%;
-        transform: translate(0%, -50%);
-        height: 136px;
-    }
-
-    #thut .abs.zz {
-        top: 30%;
-        right: 6%;
-        left: auto;
-        transform: translate(0%, -50%);
-        height: 61px;
+        top: 38%;
     }
 
     nav {
@@ -918,88 +562,12 @@ nav .hover.hovered img:last-child {
         padding-right: 2rem;
     }
 
-
-    main .header-1 {
-        margin-bottom: 1.5rem;
-    }
-
-
-    #tinh-nang-noi-bat .article .row {
-        height: 100%;
-    }
-
-    #tinh-nang-noi-bat .caption {
-        font-size: 12px;
-    }
-
-    #tinh-nang-noi-bat .title {
-        font-size: 14px;
-    }
-
-    #tinh-nang-noi-bat .img-container {
-        padding: 0.6rem;
-    }
-
-    #tinh-nang-noi-bat .img-container img {
-        width: 100%;
-        display: block;
-    }
-
-    #tinh-nang-noi-bat .article>div:nth-child(2) {
-        width: 60%;
-    }
-
-    #zvvvs>img {
-        width: 100%;
-        height: auto;
-    }
-
-    #khuyen-mai-body,
-    #san-pham-body {
-        background-position-y: 0%;
-    }
-
     header.pc.display-none.display-md>nav>div>div {
         justify-content: flex-start !important;
     }
 
     header #top-controller button.controller {
         padding: 0.5vw;
-    }
-
-    #thut .row .button {
-        width: 12.5rem;
-        height: 2.5rem;
-        position: absolute;
-        transform: none;
-        bottom: 0.7rem;
-        left: 36%;
-    }
-
-    #thut button#sgasd {
-        width: 14.4rem;
-        height: 2.9rem;
-        border-radius: 2.2rem;
-        transform: translate(51%, -117%);
-    }
-
-    #pttt a img {
-        height: 31px;
-        margin-right: 1rem;
-    }
-
-    #kb img {
-        height: 19.5px;
-    }
-
-    #td a img {
-        width: 19.5px;
-        height: 19.5px;
-    }
-
-    #gp a img {
-        margin-top: 0.1rem;
-        margin-right: 0.6rem;
     }
 
     .display-md {
@@ -1014,131 +582,51 @@ nav .hover.hovered img:last-child {
         align-items: center !important;
     }
 
-    .slideshow-container .slideshow-controller {
-        top: 35%;
-
+    header nav a span {
+        font-size: 14px;
     }
 
-    .slideshow-container .slideshow-controller>a {
-        color: white;
+    .video-container {
+        height: 54.5vw;
+        max-height: 666px;
+    }
+
+
+    #footer-logo .header-1 {
+        font-size: 31px;
+        font-weight: 600;
+    }
+
+    #landing-page #tham-gia-ngay button {
+        width: 416px;
+        height: 83px;
+    }
+
+    #landing-page #tham-gia-ngay button:hover {
+        width: 437px;
+        height: 88px;
+    }
+
+    #landing-page main .controller .button {
+        width: 281px;
+        height: 56px;
         font-size: 25px;
-        font-weight: bold;
-        padding: 3px 12px;
-        text-decoration: none;
-        text-shadow: 0px 0px 10px #0d0d0d;
+
+        border-width: 3px;
     }
 
-    #tinh-nang #side-nav {
-        max-widtH: 250px;
+    #landing-page main .controller .button:first-child {
+        margin-right: 2rem;
     }
 
-    #tinh-nang #side-nav>button {
-
-        background-color: #303338;
-        border-radius: 35px;
-        border: 2px solid #7E889A;
-        text-align: center;
-        display: block;
-        width: 100%;
-        padding: 0.5rem;
-
-
-        color: #E1E4EB;
-        font-family: 'Inter', sans-serif;
-        font-size: 20px;
-        font-weight: 500;
+    #landing-page main .controller .button:hover,
+    #landing-page main .controller .button.active {
+        border-width: 3px;
     }
 
-    #tinh-nang #side-nav>button:not(:first-child) {
-        margin-top: 5px;
-        margin-bottom: 0;
+    #landing-page main article h1 {
+        font-size: 35px;
     }
-
-    #tinh-nang #side-nav>button.active {
-        border-color: #FFFF65;
-        background-color: #FEAD00;
-        color: #000;
-        font-weight: 500;
-    }
-
-    #main-content {
-        padding-left: 50px;
-    }
-
-    #sp-list {
-        display: none;
-    }
-
-    .san-pham-article {
-        border: none;
-        border-radius: none;
-        background-color: #1F222C;
-        width: 80%;
-        margin: auto;
-        padding: 11px;
-        color: #BDC4DC;
-        font-family: 'Inter', sans-serif;
-        font-size: 17px;
-        text-align: center;
-    }
-
-    .san-pham-article:not(:last-of-type) {
-        border-bottom: 1px solid #999EAF;
-    }
-
-    .san-pham-article.active {
-        color: #FEE995;
-        border-color: #FEE995;
-    }
-
-    #tinh-nang #main-content article h1,
-    #tinh-nang #main-content article h3 {
-        background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-    }
-
-    #tinh-nang #main-content article a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #FFD76F;
-    }
-
-    #tinh-nang #main-content article ul {
-        list-style-type: circle;
-    }
-
-    #tinh-nang {
-        background: none;
-        background-color: #1A1A1A;
-    }
-
-    #main-content>* {
-        display: none;
-    }
-
-    #main-content>.show {
-        display: block;
-    }
-
-
-
-    #landing-page h1,
-    #landing-page h3 {
-        background: -webkit-linear-gradient(#FFD76F 47%, #FA7D0B 80%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-
-    }
-
-    #landing-page main a {
-        text-decoration: none;
-        font-weight: 500;
-        color: #FFD76F;
-    }
-
     #landing-page main article * {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -1149,98 +637,20 @@ nav .hover.hovered img:last-child {
         font-size: 30px;
     }
 
-    #landing-page main article h1 {
-        font-size: 35px;
-    }
-
-    #landing-page ul {
-        list-style-type: none;
-    }
-
-    #landing-page main #accordion {
-        max-width: 918px !important;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: justify;
-    }
-
-    #landing-page #footer-logo img {
-        margin: auto;
-        display: block;
-    }
-
-    #landing-page footer ul {
-        list-style-type: disc;
-    }
-
-    #landing-page footer ul {
-        color: #FFD76F;
-
-    }
-
-    #landing-page footer ul li:not(:first-child) {
-        margin-left: 3rem;
-    }
-
-    #landing-page footer ul li a {
-        text-decoration: underline;
-        color: #70CBFE;
+    #footer-logo > a > img {
+        height: auto;
     }
 
     #landing-page footer h3 {
-        color: #fff;
-        text-align: center;
-        margin: 1.2rem 0;
+        font-size: 28px;
     }
 
-    #landing-page #tham-gia-ngay a {
-        display: block;
-        width: 100%;
-        height: 100%;
-    }
-    #landing-page #tham-gia-ngay {
-        width:fit-content;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #landing-page #tham-gia-ngay button {
-        border-radius: 3rem;
-        width: 416px;
-        height: 83px;
-        background: url(img/Tham\ Gia\ Ngay\ 4.webp);
-        transition: 0.05s;
+    #contacts > *, #contacts a{
+        font-size: 19px;
     }
     
-    #landing-page #tham-gia-ngay button:hover {
-        background: url(img/hover/Tham\ Gia\ Ngay.webp);
-        width: 437px;
-        height: 88px;
-        /* transition: 0.15s; */
-    }
-    #landing-page main .controller .button:first-child {
-        margin-right: 2rem;
-    }
-
-    #landing-page main .controller .button {
-        width: 281px;
-        height: 56px;
-        background-color: #303338;
-        border: 3px solid #7E889A;
-        border-radius: 3rem;
 
 
-        color: #FFF;
-        font-weight: 500;
-        text-align: center;
-        font-size: 25px;
-    }
-    #landing-page main .controller .button:hover,
-    #landing-page main .controller .button.active {
-        background-color: #FEAD00;
-        border: 3px solid #FFFF65;
-
-        color: #000;
-    }
 
 
 }
